@@ -1,0 +1,48 @@
+basic path : PRIVIATE_DIRECTORY  -  JIHYEA  -  
+
+1. path : SELF-DRIVING
+	(1) RC Car End-to-End Image Regression with CNNs (RGB camera).ipynb
+          : You can make model for self-driving with images and csv file.
+	    : But you need to correct some codes for fitting your environment.
+	(2) end to end learning for self driving cars.pdf
+	    : (1) reference
+	(3) CARLA: An Open Urban Driving Simulator.pdf
+	    : CARLA reference
+	(4) carla ppt.pdf
+	    : CARLA reference
+
+
+2. path : SELF-DRIVING  -  for_data
+	(1) vehicle_location_check.py
+	    : If you use 'data_collect.py', you need to change starting point of the car.
+	    : By using this code, you can find the location of car you want.
+	(2) data_collect.py
+	    : As the file name, you can collect data(images, csv file) for learning.
+	    : But you know, you should change the 'image_save_path' and starting point of car when you want to get new data.
+	    : For changing starting point of the car, you correct 'start_point.location' which you find by 'vehicle_location_check.py'.
+	    : But you don't need to modify 'start_point.location.z'.
+
+
+3. path : SELF-DRIVING  -  for_driving
+	(1) agent_model
+	    : When you want to check the model made by 1-(1), use it.
+	(2) new
+	    : I got it codes from MinHong, but I haven't used it yet.
+	    : After I work it, I will upload this manual for you.
+
+
+4. path : SELF-DRIVING  -  for_driving  -  agent_model
+	(1) *.py
+	    : Just run the 'run_my_benchmark.py' for self-driving with model.
+	(2) *.h5
+	    : examples of model
+	    : 'model_background_X_1' and 'Autopilot_aws_carla.h5' are made by CARLA data.
+	    : 'Autopilot_aws_rc.h5' is made by RC data.
+	(3) etc
+
+
+
+
+5. path : LABEL
+	(1) *.ipynb
+	    : You can make model for lane detection with original images and labeled images.
